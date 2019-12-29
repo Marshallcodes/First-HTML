@@ -3,21 +3,50 @@
 <head>
 	<title>CSS</title>
 	<meta charset="utf-8">
+	<style>
+		a {
+			color: black;
+			text-decoration: none;
+		}
+		#active {
+			color: red;
+		}
+		.saw {
+			color: gray;
+		}
+		h1 {
+			font-size: 45px;
+			text-align: center;
+		}
+		h2 {
+			text-align: center;
+		}
+	</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155028749-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-155028749-1');
 </script>
 </head>
 <body>
 	<h1><a href="index.html">Welcome To Ken's Blog<a/></h1>
-	<ol>
-		<li><a href="1.html">HTML</a></li>
-		<li><a href="2.html">CSS</a></li>
+		<style>
+			li {
+				text-align: center;
+			}
+			.center {
+				list-style-position: inside;
+			}
+			img {
+				display: block; margin: 0px auto;
+			}
+		</style>
+	<ol class="center">
+		<li><a href="1.html" class="saw">HTML</a></li>
+		<li><a href="2.html" class="saw" id="active">CSS</a></li>
 		<li><a href="3.html">JavaScript</a></li>
 		<li><a href="4.html">Etc</a></li>
 	</ol>
@@ -34,7 +63,7 @@
 	Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens and underscores. A class may apply to any number of instances of any elements. An ID may only be applied to a single element.
 	Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in the document tree. One example of a widely used pseudo-class is
 </p>
-	<img src="tokyo.jpg" width="1124" height="750">
+	<img src="train.jpg" width="2560" height="800" alt="">
 	<p>
 		<div id="disqus_thread"></div>
 	<script>
