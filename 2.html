@@ -11,12 +11,6 @@
 			color: black;
 			text-decoration: none;
 		}
-		#active {
-			color: red;
-		}
-		.saw {
-			color: gray;
-		}
 		h1 {
 			font-size: 45px;
 			text-align: center;
@@ -24,67 +18,51 @@
 			margin:0;
 			padding:20px;
 		}
-		h2 {
-			text-align: center;
-		}
 		ol {
 			border-right:2px solid gray;
 			width:100px;
 			margin: 0px;
 			padding: 20px;
 		}
+		#grid {
+			display: grid;
+			grid-template-columns: 150px 1fr;
+		}
+		#grid ol {
+			padding-left: 60px;
+		}
+		#grid #article {
+			padding-left: 50px;
+		}
 	</style>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155028749-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-155028749-1');
-</script>
 </head>
 <body>
-	<h1><a href="index.html">Welcome To Ken's Blog<a/></h1>
-		<style>
-			img {
-				display: block; margin: 0px auto;
-			}
-			pre {
-				text-align: center;
-			}
-			li {
-				text-align: center;
-			}
-			.lo {
-				font-size: 15px;
-			}
-		</style>
-	<ol class="center">
-		<li><a href="1.html" class="saw">HTML</a></li>
-		<li><a href="2.html" class="saw" id="active">CSS</a></li>
-		<li><a href="3.html">JavaScript</a></li>
-		<li><a href="4.html">Etc</a></li>
-		<li><a href="box.html">Box</a></li>
-	</ol>
-	<h2><strong><u>CSS</u></strong></h2>
-		<li>First step - Click this link : <a href="https://github.com/pavolelsig/passthrough_helper_ubuntu" target="_blank" title="link to KVM guide github">KVM Guide</a></li><br>
-<p>
-	<a class="lo">
-	<pre>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		Nisltincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsumdolor sit.
-		Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donecadipiscing tristique. Mi eget mauris pharetra et.
-		Non tellus orci ac auctor augue. Elit at imperdiet duiaccumsan sit.
-		Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac.
-		habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
-	</pre>
-	</a>
-</p>
+	<h1><a href="index.html">Welcome To Ken's Blog</a></h1>
+	<div id="grid">
+		<ol class="center">
+			<li><a href="1.html">HTML</a></li>
+			<li><a href="2.html">CSS</a></li>
+			<li><a href="3.html">JavaScript</a></li>
+			<li><a href="4.html">Etc</a></li>
+			<li><a href="box.html">Box</a></li>
+		</ol>
+		<div id="article">
+			<h2><strong>CSS</strong></h2>
+				<li>First step - Click this link : <a href="https://github.com/pavolelsig/passthrough_helper_ubuntu" target="_blank" title="link to KVM guide github">KVM Guide</a></li><br>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Nisltincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsumdolor sit.
+					Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donecadipiscing tristique. Mi eget mauris pharetra et.
+					Non tellus orci ac auctor augue. Elit at imperdiet duiaccumsan sit.
+					Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac.
+					habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+			</p>
+		</div>
+	</div>
 	<img src="train.jpg" width="2560" height="800" alt="">
 	<p>
 		<div id="disqus_thread"></div>
 	<script>
-
 	/**
 	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -116,5 +94,14 @@
 	})();
 	</script>
 	<!--End of Tawk.to Script-->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155028749-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-155028749-1');
+</script>
 </body>
 </html>
